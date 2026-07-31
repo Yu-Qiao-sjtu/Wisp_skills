@@ -7,6 +7,7 @@
 | Skill | 来源 | 模块数 | 简介 |
 |-------|------|--------|------|
 | [ai-insider-research](./ai-insider-research/) | B站访谈（姚顺宇 x 张小珺） | 8 | AI大模型训练前沿实战：预训练/后训练Scaling、Coding爆发、问题定义优先、组织文化 |
+| [semiconductor-chip-insight](./semiconductor-chip-insight/) | B站访谈（廖恒 x 张小珺） | 8 | 半导体芯片产业认知：18层宝塔、韬定律、Co-Design协同优化、问题定义优先 |
 
 ## 蒸馏方法
 
