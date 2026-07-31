@@ -28,7 +28,22 @@
 cp ai-insider-research/SKILL.md ~/.claude/skills/
 ```
 
-## 相关仓库
+## 致谢
 
-- [wisp-science](https://github.com/xuzhougeng/wisp-science) — 科研文献智能体系统
-- [cangjie-skill](https://github.com/kangarooking/cangjie-skill) — 知识蒸馏方法论与流水线
+本仓库的所有 Skill 均基于以下两个开源项目构建：
+
+### [cangjie-skill](https://github.com/kangarooking/cangjie-skill)
+
+> 把书、长视频、播客里的方法论，蒸馏成可调用的 AI Skills。
+
+**Cangjie Skill** 是一套知识蒸馏方法论与流水线，使用 RIA-TV++ 七阶段流程（整体理解 → 并行提取 → 三重验证 → RIA++ 构造 → Zettelkasten 链接 → 压力测试 → 交付），将书籍、视频转写、播客文字稿等原始内容变成可独立调用、可组合使用、可压力测试的 Agent Skill 工具包。本仓库的所有 Skill 均通过 cangjie-skill 方法论蒸馏产出。
+
+### [wisp-science](https://github.com/xuzhougeng/wisp-science)
+
+> Open-source, local-first desktop AI research workbench.
+
+**Wisp Science** 是一个开源的本地优先桌面 AI 科研助手和科学计算工作台。它连接 OpenAI 兼容和 Anthropic 模型，运行持久 Python/R 环境，加载可复用的 Agent Skills（`SKILL.md`），并通过内置 MCP 服务器连接约 80 个生物信息学数据库。基于 Rust + Tauri v2 + Leptos 构建，支持跨平台桌面应用和命令行两种运行模式。本仓库的 Skill 格式遵循 Wisp Science 的 Skill 加载规范。
+
+---
+
+*感谢 kangarooking 和 Xu Zhougeng 的开源贡献。*
