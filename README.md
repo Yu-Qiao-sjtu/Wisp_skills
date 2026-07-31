@@ -1,6 +1,6 @@
 # Wisp_skills
 
-基于视频/书籍/播客等知识源蒸馏的结构化 Agent Skill 集合。每个 Skill 是一个可独立部署的知识单元，包含方法论骨架、触发场景和可执行步骤。
+基于 [cangjie-skill](https://github.com/kangarooking/cangjie-skill) 方法论蒸馏的结构化 Agent Skill 集合，格式兼容 [wisp-science](https://github.com/xuzhougeng/wisp-science) 加载规范。每个 Skill 是一个可独立部署的知识单元，包含方法论骨架、触发场景和可执行步骤。
 
 ## Skill 列表
 
@@ -9,6 +9,24 @@
 | [ai-insider-research](./ai-insider-research/) | B站访谈（姚顺宇 x 张小珺） | 8 | AI大模型训练前沿实战：预训练/后训练Scaling、Coding爆发、问题定义优先、组织文化 |
 | [semiconductor-chip-insight](./semiconductor-chip-insight/) | B站访谈（廖恒 x 张小珺） | 8 | 半导体芯片产业认知：18层宝塔、韬定律、Co-Design协同优化、问题定义优先 |
 | [ai-paradigm-shift](./ai-paradigm-shift/) | B站访谈（罗福莉 x 张小珺） | 8 | AI范式巨变下的Agent时代：OpenClaw引发巨变、群体智能、Code泛化力、组织平权 |
+
+## 与上游项目的关系
+
+本项目是 [cangjie-skill](https://github.com/kangarooking/cangjie-skill) 的下游产出，同时也是 [wisp-science](https://github.com/xuzhougeng/wisp-science) 的 Skill 生态贡献：
+
+```
+cangjie-skill (RIA-TV++ 蒸馏方法论)
+       │
+       ▼ fork & 蒸馏产出
+Wisp_skills (本仓库，3个视频访谈Skill)
+       │
+       ▼ 格式兼容
+wisp-science (.wisp/skills/ 加载规范)
+```
+
+**Fork 关系**：本仓库的蒸馏流程完全遵循 cangjie-skill 的 RIA-TV++ 七阶段方法论，SKILL.md 的内容结构（R原文/I方法论/A1案例/A2触发/E执行/B边界）来源于此。唯一的格式适配是将 `description` 压缩为单行字符串，以兼容 wisp-science 的 YAML 解析器。
+
+**兼容性**：所有 Skill 均符合 wisp-science 的加载规范（大写 `SKILL.md` + 单行 `name`/`description` frontmatter + 文件夹名与 `name` 一致），可直接放入 `.wisp/skills/` 目录使用。
 
 ## 蒸馏方法
 
@@ -24,14 +42,27 @@
 
 ## 安装
 
+### 方式一：wisp-science（推荐）
+
+```bash
+# 克隆到 wisp-science 项目的 .wisp/skills/ 目录
+cd your-wisp-science-project
+git clone https://github.com/Yu-Qiao-sjtu/Wisp_skills.git .wisp/skills/temp
+# 将需要的 skill 移入
+cp -r .wisp/skills/temp/ai-paradigm-shift .wisp/skills/
+rm -rf .wisp/skills/temp
+```
+
+### 方式二：Claude Code / Cursor
+
 ```bash
 # 将任意 Skill 的 SKILL.md 复制到你的 agent skills 目录
-cp ai-insider-research/SKILL.md ~/.claude/skills/
+cp ai-paradigm-shift/SKILL.md ~/.claude/skills/
 ```
 
 ## 致谢
 
-本仓库的所有 Skill 均基于以下两个开源项目构建：
+本项目 fork 自 [cangjie-skill](https://github.com/kangarooking/cangjie-skill)，并兼容 [wisp-science](https://github.com/xuzhougeng/wisp-science) 的 Skill 格式。感谢两个上游项目的开源贡献：
 
 ### [cangjie-skill](https://github.com/kangarooking/cangjie-skill)
 
