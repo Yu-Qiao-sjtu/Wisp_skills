@@ -44,6 +44,8 @@ cp ai-insider-research/SKILL.md ~/.claude/skills/
 
 **Wisp Science** 是一个开源的本地优先桌面 AI 科研助手和科学计算工作台。它连接 OpenAI 兼容和 Anthropic 模型，运行持久 Python/R 环境，加载可复用的 Agent Skills（`SKILL.md`），并通过内置 MCP 服务器连接约 80 个生物信息学数据库。基于 Rust + Tauri v2 + Leptos 构建，支持跨平台桌面应用和命令行两种运行模式。本仓库的 Skill 格式遵循 Wisp Science 的 Skill 加载规范。
 
+**作者**：[徐洲更](https://xuzhougeng.top/)（Xu Zhougeng），中国科学院分子植物科学卓越创新中心博士后，遗传学博士。专注于基因组学分析与生物信息学教程创作（全网阅读量超 200 万），在 *Cell*、*Nature Methods*、*Nature Communications*、*Science*、*PNAS* 等期刊发表多篇论文。独立开发 WispTerm、CiteBox、Baize 等多款 AI for Science 工具。
+
 ---
 
-*感谢 kangarooking 和 Xu Zhougeng 的开源贡献。*
+*感谢 [kangarooking](https://github.com/kangarooking) 和 [Xu Zhougeng](https://xuzhougeng.top/) 的开源贡献。*
