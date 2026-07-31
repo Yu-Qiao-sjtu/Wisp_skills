@@ -4,6 +4,14 @@
 
 ## Skill 列表
 
+### 面向 AI4Science 的跨领域科研思维（推荐优先使用）
+
+| Skill | 来源 | 模块数 | 简介 |
+|-------|------|--------|------|
+| [research-thinking-insights](./research-thinking-insights/) | 三场访谈跨领域蒸馏 | 9 | **面向AI4Science**：问题定义优先(80/20)、系统化排错、能做实验=能往前走、干净>花哨、第一性原理、喇叭口跨域思维、不抄作业、环境>经验、靠谱>聪明 |
+
+### 原始访谈技能包
+
 | Skill | 来源 | 模块数 | 简介 |
 |-------|------|--------|------|
 | [ai-insider-research](./ai-insider-research/) | B站访谈（姚顺宇 x 张小珺） | 8 | AI大模型训练前沿实战：预训练/后训练Scaling、Coding爆发、问题定义优先、组织文化 |
@@ -18,7 +26,7 @@
 cangjie-skill (RIA-TV++ 蒸馏方法论)
        │
        ▼ fork & 蒸馏产出
-Wisp_skills (本仓库，3个视频访谈Skill)
+Wisp_skills (本仓库，3个访谈Skill + 1个跨访谈科研思维Skill)
        │
        ▼ 格式兼容
 wisp-science (.wisp/skills/ 加载规范)
