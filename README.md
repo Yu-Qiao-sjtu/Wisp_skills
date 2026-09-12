@@ -1,3 +1,13 @@
+## 已归档 · 2026-09-12
+
+后续维护入口：[Qiaolab_skills](https://github.com/Yu-Qiao-sjtu/Qiaolab_skills)。
+
+五个完整技能目录及参考材料已迁移到 skills/。
+
+本仓库保留原始源码与提交历史，不再维护。请从新仓库安装所需的完整技能目录。
+
+---
+
 # Wisp_skills
 
 基于 [cangjie-skill](https://github.com/kangarooking/cangjie-skill) 方法论蒸馏的结构化 Agent Skill 集合，格式兼容 [wisp-science](https://github.com/xuzhougeng/wisp-science) 加载规范。每个 Skill 是一个可独立部署的知识单元，包含方法论骨架、触发场景和可执行步骤。
